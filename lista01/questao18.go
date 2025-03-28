@@ -11,13 +11,9 @@ func main (){
 
 	ultimoTermo = valorInicial + (nTermos-1)*razao
 
-	for i:= valorInicial; i != ultimoTermo; i = i + razao{
+	for i:= valorInicial; i != (ultimoTermo + razao) ; i = i + razao{
 
 		soma = soma + i
-
-		if i == ultimoTermo - razao {
-			soma = soma+ i + razao
-		}
 	}
 
 	fmt.Print(soma,"\n")

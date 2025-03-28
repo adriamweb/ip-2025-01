@@ -12,7 +12,7 @@ func main (){
 	fmt.Scan(&numero)
 	numeroVerify := int(numero)
 
-	if numero < 1 || float64(numeroVerify) != float64(numero) {
+	if numero < 1 || float64(numeroVerify) != numero {
 		fmt.Print("Numero invalido!")
 	} else {
 		

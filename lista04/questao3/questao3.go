@@ -10,7 +10,9 @@ func main() {
 		countImpares int
 	)
 
-	fmt.Scan(&array[0], &array[1], &array[2], &array[3], &array[4], &array[5], &array[6], &array[7], &array[8], &array[9])
+	for i:= 0; i < 10; i++{
+		fmt.Scan(&array[i])
+	}
 
 	for _, valor := range array {
 		if valor%2 == 0 {
